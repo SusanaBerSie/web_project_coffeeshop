@@ -17,13 +17,13 @@
   background-position: center;
 }
 
-.header__content {
+/*.header__content {
   display: flex;
   flex-direction: row;
   min-height: 720px;
   max-height: 800px;
   height: 100vh;
-}
+}*/
 
 .header__title {
   max-width: 709px;
@@ -72,15 +72,15 @@
   color: #838383;
 }
 
-.header__footer-hours {
+.header__column1 {
   margin: 0px auto 40px 80px;
 }
 
-.header__footer-item {
+.header__paragraph {
   margin: 0;
 }
 
-.header__footer-paragraph {
+.header__column2 {
   margin: auto 80px 40px 0;
   display: flex;
 }
@@ -148,7 +148,7 @@
   margin: 80px auto 215px;
 }
 
-.iframe {
+.recipes__iframe {
   margin: 0;
 }
 
