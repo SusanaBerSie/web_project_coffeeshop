@@ -10,8 +10,8 @@
       content="Una cafetería exclusiva en la ciudad Tripleten"
     />
     <title>Cafetería Tripleten</title>
-    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut-icon" href="./favicon.ico" />
   </head>
   <body>
@@ -59,24 +59,28 @@
             </li>
           </ul>
         </nav>
-        <div class="header__title">
-          <h1 class="header__title header__title_blue-text">
-            Café de especialidad
-          </h1>
-          <h2 class="header__title header__title_black-text">
-            en Triple Peaks
-          </h2>
-        </div>
-        <p class="header__description">
-          ¡Te&nbsp;damos&nbsp;la&nbsp;bienvenida&nbsp;a&nbsp;nuestra&nbsp;zona&nbsp;de&nbsp;estudio!
-          Aquí tenemos café para darte energía y motivar tu creatividad.
-        </p>
-        <div>
-          <img
-            class="header__image"
-            src="./images/inside_coffee_shop.png"
-            alt="Interior de una cafetería con libros"
-          />
+        <div class="header__content">
+          <div class="header-text">
+            <div class="header__title">
+              <h1 class="header__title header__title_blue-text">
+                Café de especialidad
+              </h1>
+              <h2 class="header__title header__title_black-text">
+                en Triple Peaks
+              </h2>
+            </div>
+            <p class="header__description">
+              ¡Te&nbsp;damos&nbsp;la&nbsp;bienvenida&nbsp;a&nbsp;nuestra&nbsp;zona&nbsp;de&nbsp;estudio!
+              Aquí tenemos café para darte energía y motivar tu creatividad.
+            </p>
+          </div>
+          <div class="header__image-content">
+            <img
+              class="header__image"
+              src="./images/inside_coffee_shop.png"
+              alt="Interior de una cafetería con libros"
+            />
+          </div>
         </div>
         <div class="header__footer">
           <div class="header__column1">
@@ -137,7 +141,82 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <div class="reservation__form-container">
+            <div class="reservation__title">
+              <h2 class="reservation__heading">Reservar una mesa</h2>
+            </div>
+            <form class="form">
+              <fieldset class="form__fieldset">
+                <label for="name" class="form__label-item">Nombre *</label>
+                <input
+                  type="text"
+                  class="form__item"
+                  id="name"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                />
+                <br />
+                <label for="comensal-number" class="form__label-item"
+                  >Número de comensales *</label
+                >
+                <input
+                  type="number"
+                  min="1"
+                  max="8"
+                  class="form__item"
+                  id="comensal-number"
+                  name="comensal-number"
+                  placeholder="1-8"
+                  required
+                />
+                <br />
+                <label for="date" class="form__label-item"
+                  >Fecha y hora *</label
+                >
+                <input
+                  type="date"
+                  class="form__item"
+                  id="date"
+                  name="date"
+                  required
+                />
+                <br />
+                <label for="email" class="form__label-item"
+                  >Tu correo electrónico *</label
+                >
+                <input
+                  type="text"
+                  class="form__item"
+                  id="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+                <br />
+                <fieldset class="form__button">
+                  <button type="submit" class="form__item-button">
+                    Reservar una mesa
+                  </button>
+                </fieldset>
+                <br />
+                <div class="checkbox-content">
+                  <input
+                    type="checkbox"
+                    name="use-terms"
+                    class="form__item form__item_el_checkbox"
+                    value="use-terms"
+                  />
+                  <span class="form__label-text"
+                    >Acepto los términos de uso</span
+                  >
+                </div>
+                <br />
+              </fieldset>
+            </form>
+          </div>
+        </section>
       </main>
       <footer class="footer" id="footer"></footer>
     </div>
