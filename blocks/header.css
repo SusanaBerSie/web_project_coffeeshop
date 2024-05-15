@@ -1,3 +1,11 @@
+.header {
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .header__title {
   max-width: 709px;
   margin: 183px auto 28px 80px;

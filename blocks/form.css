@@ -57,7 +57,7 @@
   background-color: #2f80ed;
 }
 
-.checkbox-content {
+.form__checkbox-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,6 +71,6 @@
   height: 20px;
 }
 
-.placeholder {
+.form__item::placeholder {
   color: #838383;
 }
