@@ -181,7 +181,8 @@
 }
 
 .reservation__title {
-  margin: 100px 0px 80px;
+  margin: 0 auto 80px auto;
+  padding-top: 100px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
