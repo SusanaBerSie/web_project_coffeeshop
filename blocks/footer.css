@@ -7,20 +7,25 @@
   justify-content: space-between;
   margin: 0;
   padding: 60px 80px 108px 80px;
+  position: relative;
 }
 
 .footer__logo {
   width: 105px;
   height: 39px;
+  position: absolute;
+  z-index: 2;
 }
 
 .footer__circle {
-  /*border-radius: ;*/
   width: 340px;
   height: 340px;
+  border-radius: 50%;
   position: absolute;
   top: -128px;
   left: -44px;
+  background-color: #2f80ed;
+  z-index: 1;
 }
 
 .footer__social {
@@ -69,7 +74,7 @@
   padding-right: 10px;
 }
 
-.footer_copyright {
+.footer__copyright {
   margin: 0;
   padding: 0px 0 60px 80px;
   font-family: "Inter";
