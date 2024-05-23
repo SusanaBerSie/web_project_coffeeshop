@@ -1,5 +1,6 @@
 .footer {
   background-color: #0a2850;
+  overflow: hidden;
 }
 
 .footer__content {
